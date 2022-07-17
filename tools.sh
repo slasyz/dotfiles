@@ -22,7 +22,9 @@ brew install exa          # Like ls, but fancier
 brew install curlie       # Like curl, but fancier
 brew install cheat        # Cheat sheets for many commands
 brew install htop
-brew install neovim       # vim with stuff already enabled
+
+brew install neovim
+brew install rclone       # CLI for cloud storages access
 
 brew install zsh-syntax-highlighting  # zsh highlighting in shell
 
