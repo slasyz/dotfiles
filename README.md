@@ -10,3 +10,5 @@ $ ln -s ~/.dotfiles/.zshrc ~
 $ ln -s ~/.dotfiles/.p10k.zsh ~
 $ ~/.dotfiles/install.sh
 ```
+
+- open iTerm 2 -> General -> Preferences -> specify /home/username/.dotfiles/iTerm2 directory and saving changes automatically.
