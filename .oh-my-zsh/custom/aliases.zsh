@@ -1,0 +1,10 @@
+alias du='du -sh'
+alias df='df -h'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias ls='ls -F -G '
+alias lss='ls -Flh -G '
+alias l='exa -Flh'
+
+#alias c=__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"; eval "$__conda_setup"; unset __conda_setup; PATH=$PATH:/opt/anaconda3/bin
+#alias cml="c && conda activate ml"
