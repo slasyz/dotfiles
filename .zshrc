@@ -64,7 +64,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/Dev/dotfiles/.oh-my-zsh/custom
+ZSH_CUSTOM=$HOME/.dotfiles/.oh-my-zsh/custom
 
 # zsh-nvm settings
 export NVM_LAZY_LOAD=true
@@ -72,6 +72,9 @@ export NVM_COMPLETION=true
 
 # Which plugins would you like to load?
 plugins=(git cp macos extract docker golang colorize colored-man-pages aws python pip zsh-nvm mk)
+if [[ "$HOST" == "mbp-work.local" ]]; then
+  plugins+=(terraform helm kubectl minikube)
+fi
 
 # Load Oh My Zsh
 source $ZSH/oh-my-zsh.sh
