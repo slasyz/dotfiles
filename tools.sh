@@ -26,6 +26,7 @@ brew install htop
 brew install neovim
 brew install rclone       # CLI for cloud storages access
 
+brew install homebrew/cask-fonts/font-hack-nerd-font
 brew install zsh-syntax-highlighting  # zsh highlighting in shell
 
 # Coding
