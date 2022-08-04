@@ -12,6 +12,7 @@ brew install alt-tab      # Better app switching UX
 
 # Shell utils
 
+brew install git          # Fresh version of git
 brew install coreutils    # GNU coreutils
 brew install moreutils    # More utils
 brew install telnet       # Telnet client
@@ -25,6 +26,9 @@ brew install htop
 
 brew install neovim
 brew install rclone       # CLI for cloud storages access
+
+brew install gpg
+brew install gpg-suite
 
 brew install homebrew/cask-fonts/font-hack-nerd-font
 brew install zsh-syntax-highlighting  # zsh highlighting in shell
