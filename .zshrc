@@ -98,3 +98,6 @@ export EDITOR='nvim'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# TODO: figure out why it doesn't work as plugin
+complete -o nosort -C mk mk
