@@ -22,7 +22,7 @@ $ ~/.dotfiles/tools.sh
 - open iTerm 2 -> General -> Preferences -> specify /home/username/.dotfiles/iTerm2 directory and saving changes automatically.
 
 
-### SSH
+### SSH, Git
 
 ```
 $ ssh-keygen 
@@ -30,4 +30,6 @@ $ ssh-add ~/.ssh/id_ed25519
 $ git config --global user.signingkey "$(cat ~/.ssh/id_ed25519.pub)" 
 $ git config --global commit.gpgsign true
 $ git config --global tag.gpgsign true
+
+$ git config --global push.autoSetupRemote true
 ```
