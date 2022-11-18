@@ -1,0 +1,15 @@
+zmodule romkatv/powerlevel10k
+zmodule zsh-users/zsh-syntax-highlighting
+zmodule git
+zmodule ohmyzsh/ohmyzsh --root plugins/cp
+zmodule ohmyzsh/ohmyzsh --root plugins/macos
+zmodule ohmyzsh/ohmyzsh --root plugins/extract
+zmodule ohmyzsh/ohmyzsh --root plugins/docker
+zmodule ohmyzsh/ohmyzsh --root plugins/golang
+zmodule ohmyzsh/ohmyzsh --root plugins/colorize
+zmodule ohmyzsh/ohmyzsh --root plugins/colored-man-pages
+zmodule ohmyzsh/ohmyzsh --root plugins/python
+zmodule ohmyzsh/ohmyzsh --root plugins/pip
+zmodule lukechilds/zsh-nvm
+# zmodule mk
+# zmodule aws
