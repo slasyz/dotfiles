@@ -5,6 +5,13 @@ zle -N self-insert url-quote-magic
 setopt MENU_COMPLETE
 zstyle ':completion:*' menu select
 
+# cd without cd
+setopt autocd
+
+# fn + left/right
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
+
 # zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
 # zstyle -e ':completion:*:approximate:*' max-errors 'reply=( $(( ($#PREFIX+$#SUFFIX)/3 )) numeric )'
 # zstyle ':completion:*:expand:*' tag-order all-expansions
