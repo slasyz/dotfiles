@@ -1,4 +1,5 @@
-autoload -U compinit promptinit bashcompinit url-quote-magic && compinit && promptinit && bashcompinit
+autoload -U compinit promptinit bashcompinit url-quote-magic
+compinit && promptinit && bashcompinit
 zle -N self-insert url-quote-magic
 
 # To enable arrows-driven completion suggestions
@@ -31,3 +32,13 @@ bindkey "^[[F" end-of-line
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 zstyle ':completion:*:*:make:*' tag-order 'targets'
+
+# ohmyzsh-style history search:
+# Typing ls and hitting Up Arrow will scroll through commands that start with what you typed: 
+# matching `ls`` and `ls -l`` but not `echo ls`.
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
