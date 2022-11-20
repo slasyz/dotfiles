@@ -13,6 +13,13 @@ setopt autocd
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
+# opt + left-right
+bindkey "^[[1;3C" forward-word
+bindkey "^[[1;3D" backward-word
+# Make it stop at symbols like /
+autoload -U select-word-style
+select-word-style bash
+
 # zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
 # zstyle -e ':completion:*:approximate:*' max-errors 'reply=( $(( ($#PREFIX+$#SUFFIX)/3 )) numeric )'
 # zstyle ':completion:*:expand:*' tag-order all-expansions
