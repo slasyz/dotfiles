@@ -5,6 +5,7 @@ alias egrep='egrep --color=auto'
 alias ls='ls -F -G '
 alias lss='ls -Flh -G '
 alias l='exa -Flh'
+alias less='less -r'
 
 alias subl='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 alias vim='nvim'
