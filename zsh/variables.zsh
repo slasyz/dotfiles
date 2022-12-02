@@ -7,5 +7,7 @@ export LSCOLORS=Gxfxcxdxbxegedabagacad
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 
+export HISTFILE=$HOME/.zsh_history
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
