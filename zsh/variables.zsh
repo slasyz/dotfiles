@@ -13,5 +13,5 @@ export HISTFILE=$HOME/.zsh_history
 # export LANG=en_US.UTF-8
 
 if [[ "$(hostname)" == "hetzner-1" ]]; then
-  export DOCKER_HOST="/run/user/1000/podman/podman.sock";
+  export DOCKER_HOST="unix:///run/user/1000/podman/podman.sock";
 fi
