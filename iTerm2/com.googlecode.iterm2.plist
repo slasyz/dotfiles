@@ -1112,6 +1112,8 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowNewOutputIndicator</key>
