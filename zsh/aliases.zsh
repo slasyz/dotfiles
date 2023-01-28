@@ -7,6 +7,8 @@ alias lss='ls -Flh -G --color '
 alias l='exa -Flh'
 alias less='less -r'
 
+alias datenow='date -u +"%Y%m%d-%H%MUTC"'
+
 alias subl='"/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"'
 alias vim='nvim'
 
