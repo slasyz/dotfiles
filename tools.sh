@@ -47,6 +47,18 @@ brew install rustup       # Rust
 
 brew install pgcli        # Fancy postgres client
 
+# Quick look plugins
+
+brew install qlcolorcode
+brew install qlstephen
+brew install qlmarkdown
+brew install quicklook-json
+brew install qlimagesize
+brew install suspicious-package
+brew install apparency
+brew install quicklookase
+brew install qlvideo
+
 # Other stuff
 
 brew install ffmpeg

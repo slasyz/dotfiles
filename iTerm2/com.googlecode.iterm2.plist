@@ -203,6 +203,10 @@
 	<integer>4</integer>
 	<key>LeftTabBarWidth</key>
 	<real>171</real>
+	<key>NeverWarnAboutShortLivedSessions_8542664A-47FE-442F-AA3A-A489A8F4A00D</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_8542664A-47FE-442F-AA3A-A489A8F4A00D_selection</key>
+	<integer>0</integer>
 	<key>NeverWarnAboutShortLivedSessions_D5D6F149-A071-4070-ABCE-45B673B0B60C</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_D5D6F149-A071-4070-ABCE-45B673B0B60C_selection</key>
@@ -373,6 +377,8 @@
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
+			<key>Blend</key>
+			<real>0.36018942128057069</real>
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
@@ -446,7 +452,7 @@
 			<key>Guid</key>
 			<string>8542664A-47FE-442F-AA3A-A489A8F4A00D</string>
 			<key>Has Hotkey</key>
-			<true/>
+			<false/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>HotKey Activated By Modifier</key>
@@ -1084,7 +1090,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.082683806723736708</real>
+			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1150,6 +1156,8 @@
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.23410742602302032</real>
 	<key>StatusBarPosition</key>
 	<integer>1</integer>
 	<key>StretchTabsToFillBar</key>
