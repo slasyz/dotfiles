@@ -68,17 +68,27 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
 ### Usable GUI apps
 
 * **Airflow** — stream video via Airplay
+* **AlDente Pro** — battery manager
 * **AltTab** — better apps switching tool
 * **Amphetamine** — prevent Mac from sleep
 * **Arc** — fancy browser
+* **Bartender** — hide icons in menu bar
 * **CapCut** — video editor (also DaVinci Resolve)
+* **CleanShot X** — powerful screenshot tool
 * **CotEditor** — the simplest text editor
 * **DiffusionBee** — StableDiffusion GUI
+* **Fantastical** — powerful calendar client
 * **HandBrake** — ffmpeg GUI
 * **IINA** — nice looking video player
 * **iTerm** — terminal
+* **Keka** — archiver/unarchiver
+* **KeySmith** — runs macro on shortcut
+* **Latst** — checking for updates
+* **Microsoft Remote Desktop** — RDP client
 * **NepTunes** — show currently playing song in menu bar
+* **Paletro** — menu items shortcut
 * **Pixelmator Pro** — image editor
+* **RapidAPI** — like Postman, but better (ex-Paw)
 * **Raycast** — swiss knife
 * **Rectangle** — window management
 * **Skim** — PDF viewer
@@ -86,25 +96,8 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
 * **Strongbox** — password manager
 * **Sublime Merge** — Git GUI
 * **Sublime Text** — yet another text editor
-* **Todoist** — TODO list
+* **Todoist** — to-do list
 * **Unarchiver** — unarchiver
 * **UTM** — open source QEMU GUI
 * **Visual Studio Code** — editor/IDE
-* **Warp** — fancy new terminal
 
-* **Setapp** — collection of apps
-  * **Archiver** — archiver/unarchiver
-  * **Bartender** — hide icons in menu bar
-  * **BetterTouchTool** — automatizations (like keeping some apps on top)
-  * **BusyCal** — powerful calendar client
-  * **CleanMyMac X** — cleaning stuff
-  * **CleanShot X** — powerful screenshot tool
-  * **Coherence X** — create Chromium-based apps for webpages (like ChatGPT)
-  * **Dash** — offline docs
-  * **DevUtils** — handy shortcuts for JSON formatting, timestamps converting and many more
-  * **Gemini** — delete duplicated photos
-  * **Jump Desktop** — RDP client
-  * **KeySmith** — runs macro on shortcut
-  * **Nitro PDF Pro** — PDF editor
-  * **Presentify** — leave marks on screen
-  * **RapidAPI** — like Postman, but better (ex-Paw)

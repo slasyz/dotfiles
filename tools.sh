@@ -38,6 +38,9 @@ brew install zsh-syntax-highlighting  # zsh highlighting in shell
 brew install ipython      # ipython
 brew install virtualenv   # virtualenv
 brew install pyenv        # Python versions manager
+brew install pipx         # install Python apps in isolated environments
+
+pipx install poetry       # managing virtual envs
 
 brew install ansible
 brew install ansible-lint  # For VS Code linter

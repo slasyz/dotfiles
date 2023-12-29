@@ -1113,6 +1113,8 @@
 			<string>/Users/slasyz</string>
 		</dict>
 	</array>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>OpenBookmark</key>
 	<false/>
 	<key>PointerActions</key>
@@ -1150,8 +1152,10 @@
 	</dict>
 	<key>Print In Black And White</key>
 	<true/>
-	<key>ShowFullScreenTabBar</key>
+	<key>PromptOnQuit</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>SoundForEsc</key>
