@@ -15,6 +15,8 @@ $ mv ~/.zimrc{,.bak} || true
 $ ln -s ~/.dotfiles/.zimrc ~
 $ mv ~/.p10k.zsh{,.bak} || true
 $ ln -s ~/.dotfiles/.p10k.zsh ~
+$ mv ~/.zshenv{,.bak} || true
+$ ln -s ~/.dotfiles/.zshenv ~
 
 $ ~/.dotfiles/tools.sh
 ```

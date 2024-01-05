@@ -39,7 +39,6 @@ brew install ipython      # ipython
 brew install virtualenv   # virtualenv
 brew install pyenv        # Python versions manager
 brew install pipx         # install Python apps in isolated environments
-
 pipx install poetry       # managing virtual envs
 
 brew install ansible
