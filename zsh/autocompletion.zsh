@@ -6,9 +6,6 @@ zle -N self-insert url-quote-magic
 setopt MENU_COMPLETE
 zstyle ':completion:*' menu select
 
-# TODO: figure out why it doesn't work as plugin
-complete -o nosort -C mk mk
-
 # Some old copypaste, idk what it does.
 # zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
 # zstyle -e ':completion:*:approximate:*' max-errors 'reply=( $(( ($#PREFIX+$#SUFFIX)/3 )) numeric )'
