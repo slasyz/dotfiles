@@ -40,9 +40,7 @@ brew install virtualenv   # virtualenv
 brew install pyenv        # Python versions manager
 brew install pipx         # install Python apps in isolated environments
 pipx install poetry       # managing virtual envs
-
-brew install ansible
-brew install ansible-lint  # For VS Code linter
+pipx inject invoke fabric # add fabric to poetry
 
 brew install go           # Go
 brew install rustup       # Rust
