@@ -23,6 +23,8 @@ $ ~/.dotfiles/tools.sh
 
 - open iTerm 2 -> General -> Preferences -> specify /home/username/.dotfiles/iTerm2 directory and saving changes automatically.
 
+- open BetterTouchTool and import BTT/exported_triggers.json
+
 
 ### SSH, Git
 
@@ -75,6 +77,7 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
 * **Amphetamine** — prevent Mac from sleep
 * **Arc** — fancy browser
 * **Bartender** — hide icons in menu bar
+* **BetterTouchTool** — customization
 * **CapCut** — video editor (also DaVinci Resolve)
 * **CleanShot X** — powerful screenshot tool
 * **CotEditor** — the simplest text editor
