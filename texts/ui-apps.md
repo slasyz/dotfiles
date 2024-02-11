@@ -45,8 +45,8 @@
 
 ## Reading
 
-* [**PDF Viewer**] — PDF viewer
-* [**Skim**] — PDF viewer
+* [**PDF Viewer**](https://pdfviewer.io/) — PDF viewer
+* [**Skim**](https://skim-app.sourceforge.io/) — PDF viewer
 
 
 ## Tools
