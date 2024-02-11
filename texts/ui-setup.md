@@ -1,4 +1,4 @@
-# UI setup
+# Setting Up UI Apps
 
 ## CotEditor
 
@@ -22,6 +22,7 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
 * **caps_lock** -> **F16** (and System Settings -> Keyboard Shortcuts -> Input Methods -> F16 to change input method)
 * **non_us_backslash** -> **grave_accent_and_tilde**
 * **grave_accent_and_tilde** -> **F17**
+
 
 ## BetterTouchTool
 

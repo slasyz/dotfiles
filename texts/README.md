@@ -1,7 +1,7 @@
 # Texts
 
-* [apps-console.md](./apps-console.md) — console apps
-* [apps.md](./apps.md) — GUI apps
+* [console-apps.md](./console-apps.md) — console apps
+* [console-setup.md](./console-setup.md) — setting up console (ZSH, SSH, Git)
 * [python.md](./python.md) — Python tools
-* [shell.md](./shell.md) — setting up shell (ZSH, SSH, Git)
-* [ui-setup.md](./ui-setup.md) — instructions for setting up some tools using UI
+* [ui-apps.md](./ui-apps.md) — UI apps
+* [ui-setup.md](./ui-apps-setup.md) — instructions for setting up UI apps

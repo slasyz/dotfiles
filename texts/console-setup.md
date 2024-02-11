@@ -1,4 +1,4 @@
-# shell
+# Setting Up Console
 
 ## Download things
 
@@ -15,20 +15,20 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 ## Set up zsh
 
 ```shell
-$ sudo scutil --set HostName mbp.local  # replace with proper value
+sudo scutil --set HostName mbp.local  # replace with proper value
 
-$ git clone git@github.com:slasyz/dotfiles.git ~/.dotfiles
+git clone git@github.com:slasyz/dotfiles.git ~/.dotfiles
 
-$ mv ~/.zshrc{,.bak} || true
-$ ln -s ~/.dotfiles/.zshrc ~
-$ mv ~/.zimrc{,.bak} || true
-$ ln -s ~/.dotfiles/.zimrc ~
-$ mv ~/.p10k.zsh{,.bak} || true
-$ ln -s ~/.dotfiles/.p10k.zsh ~
-$ mv ~/.zshenv{,.bak} || true
-$ ln -s ~/.dotfiles/.zshenv ~
+mv ~/.zshrc{,.bak} || true
+ln -s ~/.dotfiles/.zshrc ~
+mv ~/.zimrc{,.bak} || true
+ln -s ~/.dotfiles/.zimrc ~
+mv ~/.p10k.zsh{,.bak} || true
+ln -s ~/.dotfiles/.p10k.zsh ~
+mv ~/.zshenv{,.bak} || true
+ln -s ~/.dotfiles/.zshenv ~
 
-$ ~/.dotfiles/tools.sh
+~/.dotfiles/tools.sh
 ```
 
 - open iTerm 2 -> General -> Preferences -> specify `/home/username/.dotfiles/iTerm2` directory and saving changes automatically.
