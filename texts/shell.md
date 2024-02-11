@@ -4,6 +4,7 @@
 
 ```shell
 brew install homebrew/cask-fonts/font-hack-nerd-font
+brew install zsh-syntax-highlighting  # zsh highlighting in shell
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/lukechilds/zsh-nvm "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-nvm"
@@ -35,15 +36,15 @@ $ ~/.dotfiles/tools.sh
 
 ## SSH, Git
 
-```
-$ ssh-keygen
-$ ssh-add ~/.ssh/id_ed25519
-$ git config --global user.signingkey "$(cat ~/.ssh/id_ed25519.pub)"
-$ git config --global commit.gpgsign true
-$ git config --global tag.gpgsign true
+```shell
+ssh-keygen
+ssh-add ~/.ssh/id_ed25519
+git config --global user.signingkey "$(cat ~/.ssh/id_ed25519.pub)"
+git config --global commit.gpgsign true
+git config --global tag.gpgsign true
 
-$ git config --global user.name "Vyacheslav Syrovatsky"
-$ git config --global user.email "...@..."
+git config --global user.name "Vyacheslav Syrovatsky"
+git config --global user.email "...@..."
 
-$ git config --global push.autoSetupRemote true
+git config --global push.autoSetupRemote true
 ```

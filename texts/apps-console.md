@@ -29,22 +29,14 @@ brew install rclone       # CLI for cloud storages access
 
 brew install gpg
 brew install gpg-suite
-
-brew install zsh-syntax-highlighting  # zsh highlighting in shell
 ```
 
 
 ## Coding
 
 ```shell
-brew install ipython      # ipython
-brew install virtualenv   # virtualenv
-brew install pyenv        # Python versions manager
-brew install pipx         # install Python apps in isolated environments
-
 brew install go           # Go
 brew install rustup       # Rust
-
 brew install pgcli        # Fancy postgres client
 ```
 
