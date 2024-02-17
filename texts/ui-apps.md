@@ -11,6 +11,8 @@
 ## Development
 
 * [**CotEditor**](https://coteditor.com/) — the simplest text editor
+* [**ImHex**](https://imhex.werwolv.net/) — hex editor
+* [**Pine**](https://lukakerr.github.io/Pine/) — Markdown editor
 * [**RapidAPI**](https://rapidapi.com/) — API client like Postman, but better (ex-Paw)
 * [**Sublime Merge**](https://www.sublimemerge.com/) — Git GUI
 * [**Sublime Text**](https://www.sublimetext.com/) — text editor

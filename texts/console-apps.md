@@ -6,6 +6,7 @@
 ```shell
 brew install qbittorrent  # Torrent client
 brew install alt-tab      # Better app switching UX
+brew install imhex
 ```
 
 
