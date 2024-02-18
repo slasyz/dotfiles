@@ -30,3 +30,27 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
 * Keep iTerm 2 on top.
   Triggers: open iTerm 2 and double-click on menubar
   Action: Pin/Unpin Focused Window To Float On Top
+
+
+## Install
+
+```shell
+brew install qbittorrent  # Torrent client
+brew install alt-tab      # Better app switching UX
+brew install imhex
+```
+
+
+## Quick look plugins
+
+```shell
+brew install qlcolorcode
+brew install qlstephen
+brew install qlmarkdown
+brew install quicklook-json
+brew install qlimagesize
+brew install suspicious-package
+brew install apparency
+brew install quicklookase
+brew install qlvideo
+```
