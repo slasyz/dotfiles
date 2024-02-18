@@ -12,3 +12,5 @@ export ZSH_CACHE_DIR="$HOME/.cache/zsh"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+
+. "$HOME/.cargo/env"

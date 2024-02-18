@@ -48,3 +48,16 @@ git config --global user.email "...@..."
 
 git config --global push.autoSetupRemote true
 ```
+
+## sshfs
+
+Install [macFUSE](https://osxfuse.github.io/) and then:
+
+```shell
+brew install gromgit/fuse/sshfs-mac
+
+sshfs sl@hetzner-1:/home/sl /Volumes/hetzner-1
+ls ~/hetzner-1
+
+umount /Volumes/hetzner-1
+```
