@@ -11,6 +11,7 @@ zmodule ohmyzsh/ohmyzsh --root plugins/colored-man-pages
 zmodule ohmyzsh/ohmyzsh --root plugins/python
 zmodule ohmyzsh/ohmyzsh --root plugins/pip
 zmodule ohmyzsh/ohmyzsh --root plugins/invoke
+zmodule ohmyzsh/ohmyzsh --root plugins/rust
 zmodule chrisands/zsh-yarn-completions
 zmodule lukechilds/zsh-nvm
 # zmodule aws
