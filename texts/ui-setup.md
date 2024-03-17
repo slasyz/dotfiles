@@ -5,6 +5,8 @@
 Associate all text files
 
 ```shell
+brew install yq duti
+
 curl "https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml" \
   | yq -r "to_entries | (map(.value.extensions) | flatten) - [null] | unique | .[]" \
   | xargs -L 1 -I "{}" duti -s com.coteditor.CotEditor {} all

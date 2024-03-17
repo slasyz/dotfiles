@@ -136,6 +136,9 @@ brew install rustup-init
 rustup-init  # Use default parameters.  Check that .zshenv has single `. "$HOME/.cargo/env"` line.
 rustup target add x86_64-unknown-linux-gnu
 rustc -V && cargo -V
+
+# For gtk-rs
+brew install gtk4 libadwaita pkg-config
 ```
 
 On Ubuntu:
@@ -159,6 +162,7 @@ brew install telnet       # Telnet client
 
 # Fancy things 
 brew install jq
+brew install yq
 brew install lsd          # Like ls, but fancier
 brew install exa          # Like ls, but fancier (includes l)
 brew install curlie       # Like curl, but fancier
