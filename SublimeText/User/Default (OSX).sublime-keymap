@@ -2,4 +2,13 @@
     { "keys": ["option+f12"], "command": "toggle_terminus_panel" },
     { "keys": ["shift+super+up"], "command": "swap_line_up" },
     { "keys": ["shift+super+down"], "command": "swap_line_down" },
+
+    {
+        "keys": ["super+f12"],
+        "command": "lsp_symbol_definition",
+        "context": [
+            {"key": "lsp.session_with_capability", "operand": "definitionProvider"},
+            {"key": "auto_complete_visible", "operand": false}
+        ]
+    },
 ]
