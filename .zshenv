@@ -1,4 +1,4 @@
-export PATH=$HOME/.bin:$PATH:$HOME/go/bin:$HOME/.local/bin
+export PATH=$HOME/.bin:$PATH:$HOME/go/bin:$HOME/.local/bin:$HOME/Documents/Qt/6.6.2/macos/bin
 export EDITOR='nvim'
 export GOPATH=$HOME/go
 export GPG_TTY=$TTY

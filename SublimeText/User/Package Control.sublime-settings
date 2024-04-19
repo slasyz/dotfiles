@@ -1,0 +1,33 @@
+{
+	"installed_packages":
+	[
+		"A File Icon",
+		"AutoFileName",
+		"Dracula Color Scheme",
+		"Emmet",
+		"JsFormat",
+		"LSP",
+		"LSP-copilot",
+		"LSP-file-watcher-chokidar",
+		"LSP-gopls",
+		"LSP-json",
+		"LSP-pyright",
+		"LSP-rust-analyzer",
+		"LSP-svelte",
+		"LSP-typescript",
+		"Markdown Extended",
+		"MarkdownLivePreview",
+		"MarkdownPreview",
+		"Package Control",
+		"Sesame",
+		"SideBarEnhancements",
+		"Solarized Color Scheme",
+		"SublimeLinter",
+		"Svelte",
+		"Terminus",
+		"TOML",
+	],
+	"in_process_packages":
+	[
+	],
+}

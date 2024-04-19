@@ -1,0 +1,21 @@
+{
+	"color_scheme": "auto",
+	"theme": "Adaptive.sublime-theme",
+	"dark_color_scheme": "Mariana.sublime-color-scheme",
+	"light_color_scheme": "Breakers.sublime-color-scheme",
+
+	"font_size": 13,
+	"font_face": "Martian Mono",
+	"hide_new_tab_button": true,
+	"show_full_path": true,
+
+	"shift_tab_unindent": true,
+
+	"ensure_newline_at_eof_on_save": true,
+	"trim_trailing_white_space_on_save": "all",
+	"index_files": false,
+	"ignored_packages": ["Vintage"],
+
+	"sesame.path": "~/Dev",
+	"sesame.depth": 1,
+}

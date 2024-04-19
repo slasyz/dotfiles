@@ -4,7 +4,7 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias ls='ls -F -G --color '
 alias lss='ls -Flh -G --color '
-alias l='exa -Flh'
+alias l='eza -F -l -h'
 alias less='less -r'
 
 alias datenow='date -u +"%Y%m%d-%H%MUTC"'

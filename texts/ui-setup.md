@@ -5,7 +5,8 @@
 Associate all text files
 
 ```shell
-brew install yq duti
+brew install yq
+brew install duti
 
 curl "https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml" \
   | yq -r "to_entries | (map(.value.extensions) | flatten) - [null] | unique | .[]" \
@@ -22,8 +23,7 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
 ## Karabiner Elements
 
 * **caps_lock** -> **F16** (and System Settings -> Keyboard Shortcuts -> Input Methods -> F16 to change input method)
-* **non_us_backslash** -> **grave_accent_and_tilde**
-* **grave_accent_and_tilde** -> **F17**
+* **non_us_backslash** -> **grave_accent_and_tilde**`
 
 
 ## BetterTouchTool
@@ -40,6 +40,7 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
 brew install qbittorrent  # Torrent client
 brew install alt-tab      # Better app switching UX
 brew install imhex
+brew install --cask neovide
 ```
 
 

@@ -19,16 +19,15 @@ sudo scutil --set HostName mbp.local  # replace with proper value
 
 git clone git@github.com:slasyz/dotfiles.git ~/.dotfiles
 
-mv ~/.zshrc{,.bak} || true
-ln -s ~/.dotfiles/.zshrc ~
-mv ~/.zimrc{,.bak} || true
-ln -s ~/.dotfiles/.zimrc ~
-mv ~/.p10k.zsh{,.bak} || true
-ln -s ~/.dotfiles/.p10k.zsh ~
-mv ~/.zshenv{,.bak} || true
-ln -s ~/.dotfiles/.zshenv ~
+mv ~/.zshrc{,.bak} || true; ln -s ~/.dotfiles/.zshrc ~
+mv ~/.zimrc{,.bak} || true; ln -s ~/.dotfiles/.zimrc ~
+mv ~/.p10k.zsh{,.bak} || true; ln -s ~/.dotfiles/.p10k.zsh ~
+mv ~/.zshenv{,.bak} || true; ln -s ~/.dotfiles/.zshenv ~
+mv ~/.zprofile{,.bak} || true; ln -s ~/.dotfiles/.zprofile ~
 
-~/.dotfiles/tools.sh
+mv ~/Library/Application\ Support/Sublime\ Text/Packages/User{,.bak} || true
+mv ~/Library/Application\ Support/Sublime\ Text/Packages/LSP{,.bak} || true
+ln -s ~/.dotfiles/SublimeText/* ~/Library/Application\ Support/Sublime\ Text/Packages/
 ```
 
 - open iTerm 2 -> General -> Preferences -> specify `/home/username/.dotfiles/iTerm2` directory and saving changes automatically.
@@ -137,6 +136,8 @@ rustup-init  # Use default parameters.  Check that .zshenv has single `. "$HOME/
 rustup target add x86_64-unknown-linux-gnu
 rustc -V && cargo -V
 
+cargo install tauri-cli
+
 # For gtk-rs
 brew install gtk4 libadwaita pkg-config
 ```
@@ -146,6 +147,22 @@ On Ubuntu:
 ```shell
 curl https://sh.rustup.rs -sSf | sh  # Use default parameters.  Check that .zshenv has single `. "$HOME/.cargo/env"` line.
 rustc -V && cargo -V
+```
+
+
+## Docker
+
+On Mac:
+
+```shell
+brew install colima
+brew install qemu
+
+brew install docker-buildx
+mkdir -p ~/.docker/cli-plugins
+ln -sfn $HOMEBREW_PREFIX/opt/docker-buildx/bin/docker-buildx ~/.docker/cli-plugins/docker-buildx
+
+colima start
 ```
 
 
@@ -164,7 +181,7 @@ brew install telnet       # Telnet client
 brew install jq
 brew install yq
 brew install lsd          # Like ls, but fancier
-brew install exa          # Like ls, but fancier (includes l)
+brew install eza          # Like ls, but fancier (includes l)
 brew install curlie       # Like curl, but fancier
 brew install cheat        # Cheat sheets for many commands
 brew install htop
@@ -184,6 +201,7 @@ brew install lazydocker  # Docker UI
 # Video and image editing
 brew install ffmpeg
 brew install imagemagick
+brew install graphviz  # e.g. dot tool
 ```
 
 On Ubuntu:
@@ -197,7 +215,7 @@ apt install telnet
 
 # Fancy things
 apt install jq
-apt install exa
+apt install eza
 apt install htop
 curl -LO https://github.com/ClementTsang/bottom/releases/download/0.9.6/bottom_0.9.6_amd64.deb
 sudo dpkg -i bottom_0.9.6_amd64.deb

@@ -13,5 +13,4 @@ zmodule ohmyzsh/ohmyzsh --root plugins/pip
 zmodule ohmyzsh/ohmyzsh --root plugins/invoke
 zmodule ohmyzsh/ohmyzsh --root plugins/rust
 zmodule chrisands/zsh-yarn-completions
-zmodule lukechilds/zsh-nvm
 # zmodule aws
