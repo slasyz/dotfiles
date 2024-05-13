@@ -33,6 +33,18 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
   Triggers: open iTerm 2 and double-click on menubar
   Action: Pin/Unpin Focused Window To Float On Top
 
+## Fonts
+
+- Download [MartianMono Nerd Font](https://www.nerdfonts.com/font-downloads) and add it to *Font Book*.
+
+## Shortcuts
+
+Open System Settings -> Keyboard -> Keyboard Shortcuts -> App Shortcuts:
+- add Cmd-S for "Show Folders" and "Hide Folders" in Notes app
+
+Open System Settings -> Keyboard -> Keyboard Shortcuts -> Services:
+- set Cmd-F12 for "New iTerm2 Tab Here"
+
 
 ## Install
 
@@ -44,7 +56,7 @@ brew install --cask neovide
 ```
 
 
-## Quick look plugins
+## Quick Look plugins
 
 ```shell
 brew install qlcolorcode
@@ -56,4 +68,6 @@ brew install suspicious-package
 brew install apparency
 brew install quicklookase
 brew install qlvideo
+
+xattr -d -r com.apple.quarantine ~/Library/QuickLook
 ```

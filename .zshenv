@@ -10,6 +10,10 @@ export NVM_COMPLETION=true
 export HISTFILE=$HOME/.zsh_history
 export ZSH_CACHE_DIR="$HOME/.cache/zsh"
 
+[[ -f '/Applications/Tailscale.app/Contents/MacOS/Tailscale' ]] &&
+	alias tailscale='/Applications/Tailscale.app/Contents/MacOS/Tailscale'
+export TAILSCALE_IP=$(tailscale ip -4)
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 

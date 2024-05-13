@@ -12,7 +12,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 ```
 
 
-## Set up zsh
+## Set up shell
 
 ```shell
 sudo scutil --set HostName mbp.local  # replace with proper value
@@ -28,6 +28,9 @@ mv ~/.zprofile{,.bak} || true; ln -s ~/.dotfiles/.zprofile ~
 mv ~/Library/Application\ Support/Sublime\ Text/Packages/User{,.bak} || true
 mv ~/Library/Application\ Support/Sublime\ Text/Packages/LSP{,.bak} || true
 ln -s ~/.dotfiles/SublimeText/* ~/Library/Application\ Support/Sublime\ Text/Packages/
+
+# Enable Touch ID for sudo
+echo "auth       sufficient     pam_tid.so" > /etc/pam.d/sudo_local
 ```
 
 - open iTerm 2 -> General -> Preferences -> specify `/home/username/.dotfiles/iTerm2` directory and saving changes automatically.
@@ -137,6 +140,7 @@ rustup target add x86_64-unknown-linux-gnu
 rustc -V && cargo -V
 
 cargo install tauri-cli
+brew install cargo-nextest
 
 # For gtk-rs
 brew install gtk4 libadwaita pkg-config
@@ -183,6 +187,7 @@ brew install yq
 brew install lsd          # Like ls, but fancier
 brew install eza          # Like ls, but fancier (includes l)
 brew install curlie       # Like curl, but fancier
+brew install bat          # Like cat, but fancier
 brew install cheat        # Cheat sheets for many commands
 brew install htop
 brew install bottom       # btm
