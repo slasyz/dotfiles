@@ -4,7 +4,6 @@
 
 ```shell
 brew install homebrew/cask-fonts/font-hack-nerd-font
-brew install zsh-syntax-highlighting  # zsh highlighting in shell
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/lukechilds/zsh-nvm "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-nvm"
@@ -191,6 +190,7 @@ brew install bat          # Like cat, but fancier
 brew install cheat        # Cheat sheets for many commands
 brew install htop
 brew install bottom       # btm
+brew install ripgrep
 
 # Something more complex
 brew install neovim
