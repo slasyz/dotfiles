@@ -1,10 +1,13 @@
-autoload -U compinit promptinit bashcompinit url-quote-magic
-compinit && promptinit && bashcompinit
-zle -N self-insert url-quote-magic
+#autoload -U compinit promptinit bashcompinit url-quote-magic
+#compinit && promptinit && bashcompinit
+#zle -N self-insert url-quote-magic
 
 # To enable arrows-driven completion suggestions
 setopt MENU_COMPLETE
 zstyle ':completion:*' menu select
+
+# oh my zsh plugins dump completions files here
+fpath=($ZSH_CACHE_DIR/completions $fpath)
 
 # Some old copypaste, idk what it does.
 # zstyle ':completion:*::::' completer _expand _complete _ignored _approximate

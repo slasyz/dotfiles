@@ -1,16 +1,19 @@
 zmodule romkatv/powerlevel10k
+
+zmodule zsh-users/zsh-completions --fpath src
 zmodule zsh-users/zsh-syntax-highlighting
-zmodule git
-zmodule ohmyzsh/ohmyzsh --root plugins/cp
-zmodule ohmyzsh/ohmyzsh --root plugins/macos
+zmodule zsh-users/zsh-autosuggestions
+
+zmodule completion
+
+# Convenient commands
 zmodule ohmyzsh/ohmyzsh --root plugins/extract
+zmodule ohmyzsh/ohmyzsh --root plugins/macos
+
+# Autocompletions
 zmodule ohmyzsh/ohmyzsh --root plugins/docker
-zmodule ohmyzsh/ohmyzsh --root plugins/golang
-zmodule ohmyzsh/ohmyzsh --root plugins/colorize
-zmodule ohmyzsh/ohmyzsh --root plugins/colored-man-pages
-zmodule ohmyzsh/ohmyzsh --root plugins/python
 zmodule ohmyzsh/ohmyzsh --root plugins/pip
+zmodule ohmyzsh/ohmyzsh --root plugins/poetry
 zmodule ohmyzsh/ohmyzsh --root plugins/invoke
 zmodule ohmyzsh/ohmyzsh --root plugins/rust
-zmodule chrisands/zsh-yarn-completions
-# zmodule aws
+zmodule ohmyzsh/ohmyzsh --root plugins/yarn
