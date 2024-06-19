@@ -37,6 +37,10 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
 
 - Download [MartianMono Nerd Font](https://www.nerdfonts.com/font-downloads) and add it to *Font Book*.
 
+## JetBrains IDEs
+
+To make p10k prompt look good in light color scheme, open Console Colors in Settings, and then make Blue background color darker, like foreground (e.g. #063FDB).
+
 ## Shortcuts
 
 Open System Settings -> Keyboard -> Keyboard Shortcuts -> App Shortcuts:

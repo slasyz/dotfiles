@@ -67,4 +67,5 @@
 * [**Rectangle**](https://rectangleapp.com/) — window management
 * [**Splashtop**](https://www.splashtop.com/) — remote access
 * [**Strongbox**](https://strongboxsafe.com/) — password manager
+* [**Transnomino**](https://www.transnomino.com/) — batch renamer
 

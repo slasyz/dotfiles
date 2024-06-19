@@ -2,7 +2,6 @@ export PATH=$HOME/.bin:$PATH:$HOME/go/bin:$HOME/.local/bin:$HOME/Documents/Qt/6.
 export EDITOR='nvim'
 export GOPATH=$HOME/go
 export GPG_TTY=$TTY
-export LSCOLORS=Gxfxcxdxbxegedabagacad
 
 export LESS_TERMCAP_mb=$'\e[1;31m'     # mb: begin blinking as bold red
 export LESS_TERMCAP_md=$'\e[1;33m'     # md: begin blink (often represents bold, but code might be terminal-specific)
