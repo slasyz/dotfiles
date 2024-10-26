@@ -4,11 +4,13 @@
 	"dark_color_scheme": "Mariana.sublime-color-scheme",
 	"light_color_scheme": "Breakers.sublime-color-scheme",
 
+	"show_project_first": true,
+	"show_full_path": true,
+	"show_rel_path": true,
+
 	"font_size": 13,
 	"font_face": "Martian Mono",
 	"hide_new_tab_button": true,
-	"show_full_path": true,
-	"show_rel_path": true,
 	"show_line_endings": true,
 	"caret_style": "blink",
 

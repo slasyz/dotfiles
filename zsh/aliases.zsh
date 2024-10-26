@@ -5,6 +5,7 @@ alias egrep='egrep --color=auto'
 alias ls='eza'
 alias l='eza -F -l -h'
 alias less='less -r'
+alias dc='docker-compose'
 
 alias datenow='date -u +"%Y%m%d-%H%MUTC"'
 

@@ -15,6 +15,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 
 ```shell
 sudo scutil --set HostName mbp.local  # replace with proper value
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 git clone git@github.com:slasyz/dotfiles.git ~/.dotfiles
 
@@ -32,10 +33,10 @@ ln -s ~/.dotfiles/SublimeText/* ~/Library/Application\ Support/Sublime\ Text/Pac
 echo "auth       sufficient     pam_tid.so" > /etc/pam.d/sudo_local
 ```
 
-- open iTerm 2 -> General -> Preferences -> specify `/home/username/.dotfiles/iTerm2` directory and saving changes automatically.
+- open iTerm 2 -> General -> Preferences -> specify `/home/username/.dotfiles/iTerm2` directory and "Save changes: Automatically".
 
 
-## SSH, Git
+## SSH, Git, etc
 
 ```shell
 ssh-keygen
@@ -59,9 +60,16 @@ Install [macFUSE](https://osxfuse.github.io/) and then:
 brew install gromgit/fuse/sshfs-mac
 
 sshfs sl@hetzner-1:/home/sl /Volumes/hetzner-1
-ls ~/hetzner-1
+ls /Volumes/hetzner-1
 
 umount /Volumes/hetzner-1
+```
+
+## NTFS
+
+```shell
+brew install gromgit/fuse/ntfs-3g-mac
+sudo ntfs-3g /dev/diskXXX /Volumes/YYY
 ```
 
 
@@ -133,8 +141,8 @@ I use `rustup` to make cross-compilation easier.
 On Mac:
 
 ```shell
-brew install rustup-init
-rustup-init  # Use default parameters.  Check that .zshenv has single `. "$HOME/.cargo/env"` line.
+brew install rustup
+rustup toolchain # Use default parameters.  Check that .zshenv has single `. "$HOME/.cargo/env"` line.
 rustup target add x86_64-unknown-linux-gnu
 rustc -V && cargo -V
 
@@ -169,7 +177,7 @@ colima start
 ```
 
 
-## Shell utils
+## Tools
 
 On Mac:
 
@@ -207,6 +215,11 @@ brew install lazydocker  # Docker UI
 brew install ffmpeg
 brew install imagemagick
 brew install graphviz  # e.g. dot tool
+
+# Etc
+brew install postgres
+brew install pgvector
+# And also run "CREATE EXTENSION IF NOT EXISTS pg_vector;" for every database
 ```
 
 On Ubuntu:
