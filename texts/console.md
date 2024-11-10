@@ -40,7 +40,7 @@ echo "auth       sufficient     pam_tid.so" > /etc/pam.d/sudo_local
 
 ```shell
 ssh-keygen
-ssh-add ~/.ssh/id_ed25519
+ssh-add --apple-use-keychain --apple-load-keychain ~/.ssh/id_ed25519
 git config --global user.signingkey "$(cat ~/.ssh/id_ed25519.pub)"
 git config --global commit.gpgsign true
 git config --global tag.gpgsign true
@@ -49,6 +49,14 @@ git config --global user.name "Vyacheslav Syrovatsky"
 git config --global user.email "...@..."
 
 git config --global push.autoSetupRemote true
+```
+
+Add this to ~/.ssh/config:
+
+```
+Host *
+	UseKeychain yes
+	AddKeysToAgent yes
 ```
 
 
@@ -188,7 +196,7 @@ brew install coreutils    # GNU coreutils
 brew install moreutils    # More utils
 brew install telnet       # Telnet client
 
-# Fancy things 
+# Fancy things
 brew install jq
 brew install yq
 brew install lsd          # Like ls, but fancier
