@@ -7,17 +7,19 @@
 
 The script should do this: \(ai.prompt)</string>
 	<key>AiMaxTokens</key>
-	<integer>16384</integer>
+	<integer>128000</integer>
 	<key>AiModel</key>
-	<string>gpt-3.5-turbo</string>
+	<string>gpt-4o</string>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AutoComposer</key>
 	<true/>
 	<key>ComposerHeight</key>
-	<real>241.48046875</real>
+	<real>241.359375</real>
 	<key>Default Bookmark Guid</key>
 	<string>8542664A-47FE-442F-AA3A-A489A8F4A00D</string>
+	<key>DefaultTabBarHeight</key>
+	<real>28</real>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
 	<key>DynamicProfilesPath</key>
@@ -509,6 +511,8 @@ The script should do this: \(ai.prompt)</string>
 			<false/>
 			<key>HotKey Window Reopens On Activation</key>
 			<false/>
+			<key>Icon</key>
+			<integer>1</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Use Transparency</key>
