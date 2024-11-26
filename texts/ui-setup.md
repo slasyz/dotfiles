@@ -25,13 +25,30 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
 * **caps_lock** -> **F16** (and System Settings -> Keyboard Shortcuts -> Input Methods -> F16 to change input method)
 * **non_us_backslash** -> **grave_accent_and_tilde**`
 
+```shell
+cd ~/.config/karabiner/assets
+rmdir complex_modifications
+ln -s ~/.dotfiles/Karabiner/complex_modifications .
+```
+
+* add them in Karabiner Elements -> Complex Modifications -> Add predefined rule -> enable them
+
 
 ## BetterTouchTool
 
-* import `BTT/exported_triggers.json`
-* Keep iTerm 2 on top.
-  Triggers: open iTerm 2 and double-click on menubar
-  Action: Pin/Unpin Focused Window To Float On Top
+Import `BTT/exported_triggers.json`, it will set this up:
+
+* Mic toggle
+  * F5 -> Mic Toggle (Named Trigger)
+  * Named Trigger -> Mic Toggle
+  * Menu Bar Item -> MicToggleIcon
+* F buttons
+  * F6 (Key Up) -> Sleep Computer
+  * Shift-F6 (Key Up) -> just press Shift-F6 without sleeping
+  * F7/F8/F9 -> music control
+* Grave accent in Birman English layout
+  * F17 -> type text `` ` `` (it is triggered in Karabiner via `grave_accent_and_tilde` in Birman English layout)
+
 
 ## Fonts
 
