@@ -1,0 +1,25 @@
+{
+  "title": "Map Command+` to Option+Tab for Alt-Tab",
+  "rules": [
+    {
+      "description": "Map Command+` to Option+Tab for Alt-Tab",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "grave_accent_and_tilde",
+            "modifiers": {
+              "mandatory": ["command"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "tab",
+              "modifiers": ["option"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
