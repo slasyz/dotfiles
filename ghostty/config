@@ -1,0 +1,7 @@
+window-save-state = always
+window-width = 1000
+window-height = 1000
+macos-titlebar-style = tabs
+
+macos-icon = custom-style
+macos-icon-frame = plastic
