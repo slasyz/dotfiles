@@ -2,6 +2,7 @@
     { "keys": ["option+f12"], "command": "toggle_terminus_panel" },
     { "keys": ["shift+super+up"], "command": "swap_line_up" },
     { "keys": ["shift+super+down"], "command": "swap_line_down" },
+    { "keys": ["super+d"], "command": "duplicate_line" },
 
     {
         "keys": ["super+f12"],

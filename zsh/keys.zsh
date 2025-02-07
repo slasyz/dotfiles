@@ -35,6 +35,8 @@ bindkey "^[b" backward-word
 # Make it stop at symbols like /
 autoload -U select-word-style
 select-word-style bash
+# opt-delete to remove last word
+bindkey '^[^?' backward-kill-word
 
 # Something sets this to vi-cmd-mode.  Remove it.
 bindkey -r "^["

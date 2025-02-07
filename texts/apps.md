@@ -11,6 +11,7 @@
 ## Development
 
 * [**CotEditor**](https://coteditor.com/) — the simplest text editor
+* [**Cursor**](https://www.cursor.com/) — VS Code fork with powerful AI support
 * [**ImHex**](https://imhex.werwolv.net/) — hex editor
 * [**Pine**](https://lukakerr.github.io/Pine/) — Markdown editor
 * [**RapidAPI**](https://rapidapi.com/) — API client like Postman, but better (ex-Paw)
@@ -53,6 +54,7 @@
 
 ## Tools
 
+* [**AeroSpace**](https://github.com/nikitabobko/AeroSpace) — i3-like tiling manager
 * [**AlDente Pro**](https://aldente.app/) — battery manager
 * [**AltTab**](https://alt-tab-macos.netlify.app/) — window switcher
 * [**Amphetamine**](https://apps.apple.com/us/app/amphetamine/id937984704) — prevent Mac from sleep

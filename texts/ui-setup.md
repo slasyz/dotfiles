@@ -66,6 +66,15 @@ Open System Settings -> Keyboard -> Keyboard Shortcuts -> App Shortcuts:
 Open System Settings -> Keyboard -> Keyboard Shortcuts -> Services:
 - set Cmd-F12 for "New iTerm2 Tab Here"
 
+## AeroSpace
+
+https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
+> Mission control shows windows too small even there is enough space to show them bigger. There is a workaround
+
+```
+defaults write com.apple.dock expose-group-apps -bool true && killall Dock
+```
+
 
 ## Install
 
