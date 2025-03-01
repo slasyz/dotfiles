@@ -1,4 +1,7 @@
-# ohmyzsh-style history search:
+################################
+# ohmyzsh-style history search #
+################################
+
 # Typing ls and hitting Up Arrow will scroll through commands that start with what you typed:
 # matching `ls` and `ls -l` but not `echo ls`.
 
@@ -18,9 +21,9 @@ fi
 bindkey "^[[B" down-line-or-beginning-search
 
 
-# cd without cd
-setopt autocd
-
+####################
+# Arrow navigation #
+####################
 
 # fn + left/right: go to beginning/end of line
 bindkey "^[[H" beginning-of-line
@@ -45,6 +48,10 @@ bindkey "^[w" backward-delete-word
 bindkey -r "^["
 
 
+###############################
+# Trim newlines after pasting #
+###############################
+
 function custom-bracketed-paste() {
   zle .bracketed-paste # Call the original bracketed-paste function
   local content=$LBUFFER # Get the content that was just pasted
@@ -55,4 +62,3 @@ function custom-bracketed-paste() {
 }
 # Replace the default bracketed-paste with our custom version
 zle -N bracketed-paste custom-bracketed-paste
-

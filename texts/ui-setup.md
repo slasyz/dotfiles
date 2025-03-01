@@ -1,5 +1,32 @@
 # Setting Up UI Apps
 
+
+## Install some apps
+
+```shell
+brew install qbittorrent  # Torrent client
+brew install alt-tab      # Better app switching UX
+brew install imhex
+brew install --cask neovide
+```
+
+And Quick Look plugins
+
+```shell
+brew install qlcolorcode
+brew install qlstephen
+brew install qlmarkdown
+brew install quicklook-json
+brew install qlimagesize
+brew install suspicious-package
+brew install apparency
+brew install quicklookase
+brew install qlvideo
+
+xattr -d -r com.apple.quarantine ~/Library/QuickLook
+```
+
+
 ## CotEditor
 
 Associate all text files
@@ -20,6 +47,11 @@ cp ~/.dotfiles/CotEditor/* "~/Library/Application Scripts/com.coteditor.CotEdito
 ```
 
 
+## iTerm 2
+
+- open iTerm 2 -> General -> Preferences -> specify `/home/username/.dotfiles/iTerm2` directory and "Save changes: Automatically".
+
+
 ## Karabiner Elements
 
 * **caps_lock** -> **F16** (and System Settings -> Keyboard Shortcuts -> Input Methods -> F16 to change input method)
@@ -36,7 +68,7 @@ ln -s ~/.dotfiles/Karabiner/complex_modifications .
 
 ## BetterTouchTool
 
-Import `BTT/exported_triggers.json`, it will set this up:
+Import `BetterTouchTool/exported_triggers.json`, it will set this up:
 
 * Mic toggle
   * F5 -> Mic Toggle (Named Trigger)
@@ -54,9 +86,11 @@ Import `BTT/exported_triggers.json`, it will set this up:
 
 - Download [MartianMono Nerd Font](https://www.nerdfonts.com/font-downloads) and add it to *Font Book*.
 
+
 ## JetBrains IDEs
 
-To make p10k prompt look good in light color scheme, open Console Colors in Settings, and then make Blue background color darker, like foreground (e.g. #063FDB).
+To make p10k prompt look good in light color scheme, open Console Colors in Settings, and then make Blue background color darker, like foreground (e.g. `#063FDB`).
+
 
 ## Shortcuts
 
@@ -66,6 +100,7 @@ Open System Settings -> Keyboard -> Keyboard Shortcuts -> App Shortcuts:
 Open System Settings -> Keyboard -> Keyboard Shortcuts -> Services:
 - set Cmd-F12 for "New iTerm2 Tab Here"
 
+
 ## AeroSpace
 
 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
@@ -73,31 +108,4 @@ https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 
 ```
 defaults write com.apple.dock expose-group-apps -bool true && killall Dock
-```
-
-
-## Install
-
-```shell
-brew install qbittorrent  # Torrent client
-brew install alt-tab      # Better app switching UX
-brew install imhex
-brew install --cask neovide
-```
-
-
-## Quick Look plugins
-
-```shell
-brew install qlcolorcode
-brew install qlstephen
-brew install qlmarkdown
-brew install quicklook-json
-brew install qlimagesize
-brew install suspicious-package
-brew install apparency
-brew install quicklookase
-brew install qlvideo
-
-xattr -d -r com.apple.quarantine ~/Library/QuickLook
 ```

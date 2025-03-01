@@ -24,6 +24,8 @@ mv ~/.p10k.zsh{,.bak} || true; ln -s ~/.dotfiles/.p10k.zsh ~
 mv ~/.zshenv{,.bak} || true; ln -s ~/.dotfiles/.zshenv ~
 mv ~/.zprofile{,.bak} || true; ln -s ~/.dotfiles/.zprofile ~
 
+ln -s ~/.dotfiles/ghostty ~/.config/ghostty
+
 mv ~/Library/Application\ Support/Sublime\ Text/Packages/User{,.bak} || true
 mv ~/Library/Application\ Support/Sublime\ Text/Packages/LSP{,.bak} || true
 ln -s ~/.dotfiles/SublimeText/* ~/Library/Application\ Support/Sublime\ Text/Packages/
@@ -34,8 +36,6 @@ ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot ~/.local/bin/co
 # Enable Touch ID for sudo
 echo "auth       sufficient     pam_tid.so" > /etc/pam.d/sudo_local
 ```
-
-- open iTerm 2 -> General -> Preferences -> specify `/home/username/.dotfiles/iTerm2` directory and "Save changes: Automatically".
 
 
 ## SSH, Git, etc
@@ -53,7 +53,7 @@ git config --global user.email "...@..."
 git config --global push.autoSetupRemote true
 ```
 
-Add this to ~/.ssh/config:
+Add this to `~/.ssh/config`:
 
 ```
 Host *
