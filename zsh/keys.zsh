@@ -44,3 +44,15 @@ bindkey '^[^?' backward-kill-word
 bindkey -r "^["
 
 bindkey "^[w" backward-delete-word
+
+function custom-bracketed-paste() {
+  zle .bracketed-paste # Call the original bracketed-paste function
+  local content=$LBUFFER # Get the content that was just pasted
+  # Remove trailing newline if present
+  if [[ ${content[-1]} == $'\n' ]]; then
+    LBUFFER="${content[1,-2]}"
+  fi
+}
+# Replace the default bracketed-paste with our custom version
+zle -N bracketed-paste custom-bracketed-paste
+
