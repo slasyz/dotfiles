@@ -1,6 +1,7 @@
 # ohmyzsh-style history search:
 # Typing ls and hitting Up Arrow will scroll through commands that start with what you typed:
 # matching `ls` and `ls -l` but not `echo ls`.
+
 # start typing + [Up-Arrow] - fuzzy find history forward
 if [[ "${terminfo[kcuu1]}" != "" ]]; then
     autoload -U up-line-or-beginning-search
@@ -39,11 +40,10 @@ autoload -U select-word-style
 select-word-style bash
 # opt-delete to remove last word
 bindkey '^[^?' backward-kill-word
-
+bindkey "^[w" backward-delete-word
 # Something sets this to vi-cmd-mode.  Remove it.
 bindkey -r "^["
 
-bindkey "^[w" backward-delete-word
 
 function custom-bracketed-paste() {
   zle .bracketed-paste # Call the original bracketed-paste function

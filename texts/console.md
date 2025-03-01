@@ -27,6 +27,9 @@ mv ~/.zprofile{,.bak} || true; ln -s ~/.dotfiles/.zprofile ~
 mv ~/Library/Application\ Support/Sublime\ Text/Packages/User{,.bak} || true
 mv ~/Library/Application\ Support/Sublime\ Text/Packages/LSP{,.bak} || true
 ln -s ~/.dotfiles/SublimeText/* ~/Library/Application\ Support/Sublime\ Text/Packages/
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/.local/bin/subl
+
+ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot ~/.local/bin/cot
 
 # Enable Touch ID for sudo
 echo "auth       sufficient     pam_tid.so" > /etc/pam.d/sudo_local
@@ -112,8 +115,9 @@ On Mac:
 ```shell
 brew install ipython      # ipython
 brew install virtualenv   # virtualenv
-brew install pyenv        # Python versions manager
-brew install pipx         # install Python apps in isolated environments
+brew install uv           # (1) virtual env manager (poetry replacement)
+                          # (2) Python versions manager (pyenv replacement)
+                          # (3) Python tools manager (pipx replacement)
 ```
 
 On Ubuntu:
@@ -121,23 +125,21 @@ On Ubuntu:
 ```shell
 apt install python3.12
 apt install python3.12-venv
-apt install pipx
 apt install python3-ipython
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 On both systems:
 
 ```shell
-# `pipx` is a tool to install and run Python applications (such as Poetry or Invoke) in isolated environments.
-# Install it from brew/apt, and then:
-pipx ensurepath  # or add ~/.local/bin to $PATH manually wherever you set it
+uv tool update-shell  # or add ~/.local/bin to $PATH manually wherever you set it
 
-# Managing virtual environments
-pipx install poetry
+# Install Poetry for managing virtual environments (for old projects; I use uv for new projects)
+uv tool install poetry
 
-# Invoke runs commands from `tasks.py` in current working directory, just like `make`.
-pipx install invoke
-pipx inject invoke fabric
+# Install Invoke to run commands from `tasks.py` in current working directory, just like `make`.
+# And add fabric as its dependency so you can use SSH in tasks.py.
+uv tool install invoke --with fabric
 ```
 
 
@@ -170,7 +172,7 @@ rustc -V && cargo -V
 
 ## Docker
 
-On Mac:
+On Mac, I just install OrbStack. But in order to install and set up colima, do this:
 
 ```shell
 brew install colima
@@ -211,8 +213,8 @@ brew install ripgrep
 brew install neovim
 brew install rclone       # CLI for cloud storages access
 brew install gromgit/fuse/sshfs-mac
-brew install pgcli    # Fancy postgres client
-pipx install litecli  # Fancy sqlite client
+brew install pgcli        # Fancy postgres client
+uv tool install litecli   # Fancy sqlite client
 
 # Docker tools
 brew install dive        # Inspect Docker images
@@ -255,7 +257,7 @@ sudo apt install -y eza
 apt install neovim
 apt install rclone
 apt install pgcli
-pipx install litecli
+uv tool install litecli
 
 # Docker tools
 go install github.com/wagoodman/dive@latest
