@@ -12,7 +12,7 @@ after-login-command = []
 after-startup-command = []
 
 # Start AeroSpace at login
-start-at-login = true
+start-at-login = false
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -168,10 +168,22 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = 'company.thebrowser.Browser'
     check-further-callbacks = true
     run = ['move-node-to-workspace 1']
+[[on-window-detected]]
+    if.app-id = 'com.apple.Mail'
+    check-further-callbacks = true
+    run = ['move-node-to-workspace 1']
+[[on-window-detected]]
+    if.app-id = 'com.apple.Calendar'
+    check-further-callbacks = true
+    run = ['move-node-to-workspace 1']
+[[on-window-detected]]
+    if.app-id = 'com.todoist.mac.Todoist'
+    check-further-callbacks = true
+    run = ['move-node-to-workspace 1']
 
 [[on-window-detected]]
     #if.app-id = 'com.apple.systempreferences'
-    if.app-name-regex-substring = '(goland|sublime|cursor|visual studio code)'
+    if.app-name-regex-substring = '(goland|sublime|cursor)'
     #if.window-title-regex-substring = 'substring'
     #if.workspace = 'workspace-name'
     #if.during-aerospace-startup = true
@@ -179,6 +191,15 @@ automatically-unhide-macos-hidden-apps = false
     run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
+    if.app-id = 'com.microsoft.VSCode'
+    check-further-callbacks = true
+    run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
     if.app-name-regex-substring = 'telegram'
+    check-further-callbacks = true
+    run = ['move-node-to-workspace 3']
+[[on-window-detected]]
+    if.app-name-regex-substring = 'microsoft teams'
     check-further-callbacks = true
     run = ['move-node-to-workspace 3']

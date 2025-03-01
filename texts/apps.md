@@ -31,9 +31,6 @@
 
 ## Notes, Calendars & To-Do
 
-* [**Craft**](https://www.craft.do/) — notes
-* [**Fantastical**](https://flexibits.com/fantastical) — calendar
-* [**Obsidian**](https://obsidian.md/) — notes
 * [**Todoist**](https://todoist.com/) — to-do list
 
 
@@ -54,7 +51,6 @@
 
 ## Tools
 
-* [**AeroSpace**](https://github.com/nikitabobko/AeroSpace) — i3-like tiling manager
 * [**AlDente Pro**](https://aldente.app/) — battery manager
 * [**AltTab**](https://alt-tab-macos.netlify.app/) — window switcher
 * [**Amphetamine**](https://apps.apple.com/us/app/amphetamine/id937984704) — prevent Mac from sleep

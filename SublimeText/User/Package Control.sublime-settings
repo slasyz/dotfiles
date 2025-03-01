@@ -31,5 +31,6 @@
 	],
 	"in_process_packages":
 	[
+		"LSP-pyright",
 	],
 }

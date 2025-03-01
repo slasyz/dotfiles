@@ -25,6 +25,8 @@ setopt autocd
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 # cmd + left/right: go to beginning/end of line
+bindkey "^[^[[D" beginning-of-line  # this is what JetBrains IDE terminal sends
+bindkey "^[^[[C" end-of-line        # and this
 bindkey "^A" beginning-of-line
 bindkey "^E" end-of-line
 # opt + left-right: go to previous/next word

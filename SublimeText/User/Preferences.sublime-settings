@@ -20,7 +20,8 @@
 	"save_on_focus_lost": true,
 	"trim_trailing_white_space_on_save": "all",
 	"index_files": false,
-	"ignored_packages": ["Vintage",
+	"ignored_packages": ["LSP-pyright",
+		"Vintage",
 	],
 
 	"sesame.path": "~/Dev",
