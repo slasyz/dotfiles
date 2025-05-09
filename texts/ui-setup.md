@@ -82,11 +82,6 @@ Import `BetterTouchTool/exported_triggers.json`, it will set this up:
   * F17 -> type text `` ` `` (it is triggered in Karabiner via `grave_accent_and_tilde` in Birman English layout)
 
 
-## Fonts
-
-- Download [MartianMono Nerd Font](https://www.nerdfonts.com/font-downloads) and add it to *Font Book*.
-
-
 ## JetBrains IDEs
 
 To make p10k prompt look good in light color scheme, open Console Colors in Settings, and then make Blue background color darker, like foreground (e.g. `#063FDB`).
@@ -95,10 +90,12 @@ To make p10k prompt look good in light color scheme, open Console Colors in Sett
 ## Shortcuts
 
 Open System Settings -> Keyboard -> Keyboard Shortcuts -> App Shortcuts:
-- add Cmd-S for "Show Folders" and "Hide Folders" in Notes app
+- add Cmd-S for "Show Folders" and "Hide Folders" in Notes app (`defaults write com.apple.Notes NSUserKeyEquivalents -dict-add "Show Folders" "@s" "Hide Folders" "@s"`);
+- add Cmd-V for "Paste and Match Formatting" and Cmd-Opt-Shift-V for "Paste" in Microsoft Word (`defaults write com.microsoft.Word NSUserKeyEquivalents -dict-add "Paste and Match Formatting" "@v" "Paste" "@~\$v"`);
+- add Cmd-Shift-X for "Strikethrough" in Bear (`defaults write net.shinyfrog.bear NSUserKeyEquivalents -dict-add "Strikethrough" "@\$x"`).
 
 Open System Settings -> Keyboard -> Keyboard Shortcuts -> Services:
-- set Cmd-F12 for "New iTerm2 Tab Here"
+- set Cmd-F12 for "New iTerm2 Tab Here".
 
 
 ## AeroSpace

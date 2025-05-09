@@ -1,0 +1,63 @@
+{
+    "workbench.colorTheme": "Default Light Modern",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "properties": false
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.fontFamily": "'Martian Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontWeight": "300",
+    "files.associations": {
+        "*.svx": "markdown",
+        "*.gohtml": "gotmpl"
+    },
+    "emmet.excludeLanguages": [],
+    "emmet.triggerExpansionOnTab": true,
+    "terminal.integrated.fontFamily": "MartianMono Nerd Font",
+    "workbench.iconTheme": "file-icons",
+    "editor.renderWhitespace": "all",
+    "svelte.enable-ts-plugin": true,
+    "explorer.decorations.badges": false,
+    "editor.accessibilitySupport": "off",
+    "editor.minimap.enabled": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.editor.decorations.badges": false,
+    "gitlens.plusFeatures.enabled": false,
+    "editor.quickSuggestionsDelay": 100000,
+    "gitlens.codeLens.enabled": false,
+    "emmet.includeLanguages": {
+        "svelte": "html"
+    },
+    "editor.hover.delay": 1000,
+    "editor.hover.hidingDelay": 0,
+    "editor.tabSize": 2,
+    "window.openFoldersInNewWindow": "on",
+    "search.showLineNumbers": true,
+    "search.useParentIgnoreFiles": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "makefile.configureOnOpen": false,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "editor.inlayHints.enabled": "onUnlessPressed",
+    "color-highlight.markerType": "dot-before",
+    "cursor.cpp.disabledLanguages": [
+        "plaintext",
+        "markdown",
+        "scminput",
+        "properties"
+    ],
+    "go.toolsManagement.autoUpdate": true,
+    "git.confirmSync": false,
+    "workbench.editor.enablePreview": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.editor.wrapTabs": true,
+    "python.languageServer": "Pylance",
+    "chat.editor.lineHeight": 1.1,
+    "editor.fontSize": 13
+}

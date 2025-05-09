@@ -4,6 +4,7 @@
 
 ```shell
 brew install homebrew/cask-fonts/font-hack-nerd-font
+brew install --cask font-martian-mono
 
 # Also periodically run this: "zimfw upgrade" to upgrade zimfw, and "zimfw update" to update modules.
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
@@ -18,13 +19,16 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 git clone git@github.com:slasyz/dotfiles.git ~/.dotfiles
 
-mv ~/.zshrc{,.bak} || true; ln -s ~/.dotfiles/.zshrc ~
-mv ~/.zimrc{,.bak} || true; ln -s ~/.dotfiles/.zimrc ~
-mv ~/.p10k.zsh{,.bak} || true; ln -s ~/.dotfiles/.p10k.zsh ~
-mv ~/.zshenv{,.bak} || true; ln -s ~/.dotfiles/.zshenv ~
-mv ~/.zprofile{,.bak} || true; ln -s ~/.dotfiles/.zprofile ~
+ln -s ~/.dotfiles/.zshrc ~
+ln -s ~/.dotfiles/.zimrc ~
+ln -s ~/.dotfiles/.p10k.zsh ~
+ln -s ~/.dotfiles/.zshenv ~
+ln -s ~/.dotfiles/.zprofile ~
 
 ln -s ~/.dotfiles/ghostty ~/.config/ghostty
+ln -s ~/.dotfiles/zed/* ~/.config/zed
+ln -s ~/.dotfiles/VSCode/{keybindings.json,settings.json} ~/Library/Application\ Support/Code/User/
+ln -s ~/.dotfiles/Cursor/{keybindings.json,settings.json} ~/Library/Application\ Support/Cursor/User/
 
 mv ~/Library/Application\ Support/Sublime\ Text/Packages/User{,.bak} || true
 mv ~/Library/Application\ Support/Sublime\ Text/Packages/LSP{,.bak} || true
