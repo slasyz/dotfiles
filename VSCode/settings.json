@@ -50,4 +50,6 @@
         }
     },
     "editor.fontSize": 13,
+    "workbench.editor.enablePreview": false,
+    "window.title": "${rootName}${separator}${profileName}${separator}${activeEditorShort}",
 }
