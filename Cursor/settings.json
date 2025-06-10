@@ -24,7 +24,6 @@
     "editor.accessibilitySupport": "off",
     "editor.minimap.enabled": false,
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
     "workbench.editor.decorations.badges": false,
     "gitlens.plusFeatures.enabled": false,
     "editor.quickSuggestionsDelay": 100000,
@@ -59,5 +58,13 @@
     "workbench.editor.wrapTabs": true,
     "python.languageServer": "Pylance",
     "chat.editor.lineHeight": 1.1,
-    "editor.fontSize": 13
+    "editor.fontSize": 13,
+    "window.title": "${rootName}${separator}${profileName}${separator}${activeEditorShort}",
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    }
 }

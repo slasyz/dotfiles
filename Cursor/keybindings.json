@@ -167,17 +167,8 @@
         "command": "-editor.action.previewDeclaration"
     },
     {
-        "key": "alt+f11",
-        "command": "workbench.panel.aichat"
-    },
-    {
         "key": "shift+alt+f11",
         "command": "workbench.panel.composerViewPane2"
-    },
-    {
-        "key": "alt+f11",
-        "command": "aichat.close-sidebar",
-        "when": "view.workbench.panel.aichat.view.visible"
     },
     {
         "key": "shift+alt+f11",
@@ -187,5 +178,18 @@
     {
         "key": "cmd+i",
         "command": "composerMode.agent"
+    },
+    {
+        "key": "alt+f11",
+        "command": "composer.startComposerPrompt"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-composer.startComposerPrompt"
+    },
+    {
+        "key": "alt+space",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
     }
 ]
