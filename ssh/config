@@ -1,0 +1,40 @@
+# Added by OrbStack: 'orb' SSH host for Linux machines
+# This only works if it's at the top of ssh_config (before any Host blocks).
+# This won't be added again if you remove it.
+Include ~/.orbstack/ssh/config
+
+Include /Users/sl/.colima/ssh_config
+
+Host *
+	UseKeychain yes
+	AddKeysToAgent yes
+
+
+Host hetzner-1 hetzner-1.ext
+	Port 14144
+	User sl
+
+
+# VPNs
+
+Host 212.118.37.82 marzban-1
+	User sl
+	Port 16777
+
+Host 31.25.235.196 marzban-2
+	User pipka
+	Port 15466
+
+Host 3.74.43.5 marzban-couch
+	User ubuntu
+	Port 19475
+	IdentityFile ~/.ssh/couch/incvpn-fra.pem
+
+# Couch
+
+Host 10.0.30.* 10.0.29.*
+	User couch
+
+Host amazon-db amazon-couch
+	User admin
+	IdentityFile ~/.ssh/couch/virginia-couch-test.pem

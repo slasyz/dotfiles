@@ -24,6 +24,7 @@ ln -s ~/.dotfiles/.zimrc ~
 ln -s ~/.dotfiles/.p10k.zsh ~
 ln -s ~/.dotfiles/.zshenv ~
 ln -s ~/.dotfiles/.zprofile ~
+ln -s ~/.dotfiles/ssh/config/ ~/.ssh/config
 
 ln -s ~/.dotfiles/ghostty ~/.config/ghostty
 ln -s ~/.dotfiles/zed/* ~/.config/zed
@@ -144,6 +145,9 @@ uv tool install poetry
 # Install Invoke to run commands from `tasks.py` in current working directory, just like `make`.
 # And add fabric as its dependency so you can use SSH in tasks.py.
 uv tool install invoke --with fabric
+
+uv tool install litecli   # Fancy sqlite client
+uv tool install aider     # AI-powered agentic code assistant
 ```
 
 
@@ -218,7 +222,6 @@ brew install neovim
 brew install rclone       # CLI for cloud storages access
 brew install gromgit/fuse/sshfs-mac
 brew install pgcli        # Fancy postgres client
-uv tool install litecli   # Fancy sqlite client
 
 # Docker tools
 brew install dive        # Inspect Docker images
@@ -261,7 +264,6 @@ sudo apt install -y eza
 apt install neovim
 apt install rclone
 apt install pgcli
-uv tool install litecli
 
 # Docker tools
 go install github.com/wagoodman/dive@latest
