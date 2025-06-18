@@ -1,6 +1,5 @@
 zmodule romkatv/powerlevel10k
 
-zmodule zsh-users/zsh-completions --fpath src
 zmodule completion
 
 zmodule zsh-users/zsh-syntax-highlighting
@@ -17,9 +16,13 @@ zmodule ohmyzsh/ohmyzsh --root plugins/macos
 zmodule ohmyzsh/ohmyzsh --root plugins/poetry
 zmodule ohmyzsh/ohmyzsh --root plugins/invoke
 zmodule ohmyzsh/ohmyzsh --root plugins/rust
+zmodule zsh-users/zsh-completions --fpath src  # yarn, etc
 
 # These tools were installed via brew, so they already have completions somewhere in $fpath.
 # To verify, run this:
 #   print -l $fpath | xargs -I {} find {} -name "_*" 2>/dev/null | grep docker
 # zmodule ohmyzsh/ohmyzsh --root plugins/docker
 # zmodule ohmyzsh/ohmyzsh --root plugins/pip
+
+# And these are buggy and don't work properly:
+# zmodule ohmyzsh/ohmyzsh --root plugins/yarn
