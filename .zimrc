@@ -1,19 +1,25 @@
 zmodule romkatv/powerlevel10k
 
 zmodule zsh-users/zsh-completions --fpath src
+zmodule completion
+
 zmodule zsh-users/zsh-syntax-highlighting
 zmodule zsh-users/zsh-autosuggestions
-
-zmodule completion
 
 # Convenient commands
 zmodule ohmyzsh/ohmyzsh --root plugins/extract
 zmodule ohmyzsh/ohmyzsh --root plugins/macos
 
 # Autocompletions
-zmodule ohmyzsh/ohmyzsh --root plugins/docker
-zmodule ohmyzsh/ohmyzsh --root plugins/pip
+# These modules were installed via other tools that do not provide completions.
+# So we need to load them here.
+# These tools create completions in ~/.cache/zsh/completions/
 zmodule ohmyzsh/ohmyzsh --root plugins/poetry
 zmodule ohmyzsh/ohmyzsh --root plugins/invoke
 zmodule ohmyzsh/ohmyzsh --root plugins/rust
-zmodule ohmyzsh/ohmyzsh --root plugins/yarn
+
+# These tools were installed via brew, so they already have completions somewhere in $fpath.
+# To verify, run this:
+#   print -l $fpath | xargs -I {} find {} -name "_*" 2>/dev/null | grep docker
+# zmodule ohmyzsh/ohmyzsh --root plugins/docker
+# zmodule ohmyzsh/ohmyzsh --root plugins/pip
