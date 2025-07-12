@@ -9,7 +9,9 @@
   {
     "bindings": {
       "alt-f11": "workspace::ToggleRightDock",
-      "alt-f12": "workspace::ToggleBottomDock"
+      "alt-f12": "workspace::ToggleBottomDock",
+      "cmd-alt-up": "pane::ActivatePreviousItem",
+      "cmd-alt-down": "pane::ActivateNextItem"
     }
   },
   {

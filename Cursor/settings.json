@@ -1,9 +1,9 @@
 {
-    "workbench.colorTheme": "Default Light Modern",
+    "workbench.colorTheme": "Visual Studio Light",
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
-        "markdown": false,
+        //"markdown": false,
         "scminput": false,
         "properties": false
     },
@@ -46,7 +46,6 @@
     "color-highlight.markerType": "dot-before",
     "cursor.cpp.disabledLanguages": [
         "plaintext",
-        "markdown",
         "scminput",
         "properties"
     ],
@@ -66,5 +65,22 @@
         "editor.codeActionsOnSave": {
             "source.organizeImports": "explicit"
         }
+    },
+    "explorer.confirmDragAndDrop": false,
+    "[markdown]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": false,
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
     }
 }

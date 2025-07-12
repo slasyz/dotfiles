@@ -16,18 +16,13 @@
     }
   },
   "lsp": {
-    "gopls": {
-      "analyses": {
-        "composites": false
-      }
-    }
+    "gopls": {}
   },
   "agent": {
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4o"
-    },
-    "version": "2"
+    }
   },
   "theme": "VSCode Light+",
   "ui_font_size": 16,
@@ -48,7 +43,7 @@
     "entry_spacing": "standard"
   },
   "indent_guides": {
-    "show": "always"
+    "enabled": true
   },
   "collaboration_panel": {
     "button": false
@@ -69,5 +64,9 @@
   },
   "terminal": {
     "font_family": "Hack Nerd Font Mono"
+  },
+  "show_whitespaces": "all",
+  "experimental.theme_overrides": {
+    "editor.invisible": "#ddd"
   }
 }
