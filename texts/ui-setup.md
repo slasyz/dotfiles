@@ -97,6 +97,11 @@ Open System Settings -> Keyboard -> Keyboard Shortcuts -> App Shortcuts:
 Open System Settings -> Keyboard -> Keyboard Shortcuts -> Services:
 - set Cmd-F12 for "New iTerm2 Tab Here".
 
+For IDEs I need these shortcuts:
+- Cmd-Shift-P to open Command Palette;
+- Cmd-P to open file by name;
+- Opt-Up/Down to move line up/down;
+
 
 ## AeroSpace
 

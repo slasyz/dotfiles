@@ -3,9 +3,9 @@
 
 ## Basic
 
-* [**Arc**](https://arc.net/) — fancy browser
 * [**CleanShot X**](https://cleanshot.com/) — powerful screenshot tool
 * [**iTerm**](https://iterm2.com/) — terminal
+* [**Vivaldi**](https://vivaldi.com/) — browser
 
 
 ## Development
@@ -18,6 +18,7 @@
 * [**Sublime Merge**](https://www.sublimemerge.com/) — Git GUI
 * [**Sublime Text**](https://www.sublimetext.com/) — text editor
 * [**Visual Studio Code**](https://code.visualstudio.com/) — text editor
+* [**Zed**](https://zed.dev/) — text editor
 
 
 ## GUIs
@@ -32,6 +33,8 @@
 ## Notes, Calendars & To-Do
 
 * [**Todoist**](https://todoist.com/) — to-do list
+* [**Bear**](https://bear.app/) — note-taking app
+* [**BusyCal**](https://busycal.com/) — calendar app
 
 
 ## Photo & Video
@@ -66,4 +69,3 @@
 * [**Splashtop**](https://www.splashtop.com/) — remote access
 * [**Strongbox**](https://strongboxsafe.com/) — password manager
 * [**Transnomino**](https://www.transnomino.com/) — batch renamer
-

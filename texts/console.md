@@ -26,6 +26,7 @@ ln -s ~/.dotfiles/.zshenv ~
 ln -s ~/.dotfiles/.zprofile ~
 ln -s ~/.dotfiles/ssh/config/ ~/.ssh/config
 
+ln -s ~/.dotfiles/.finicky.js ~
 ln -s ~/.dotfiles/ghostty ~/.config/ghostty
 ln -s ~/.dotfiles/zed/* ~/.config/zed
 ln -s ~/.dotfiles/VSCode/{keybindings.json,settings.json} ~/Library/Application\ Support/Code/User/
@@ -40,6 +41,11 @@ ln -s /Applications/CotEditor.app/Contents/SharedSupport/bin/cot ~/.local/bin/co
 
 # Enable Touch ID for sudo
 echo "auth       sufficient     pam_tid.so" > /etc/pam.d/sudo_local
+```
+
+Set up backing up ZSH history in cron (https://unix.stackexchange.com/questions/568907/why-do-i-lose-my-zsh-history):
+```
+30 14 * * * cp ~/.zsh_history ~/.zsh_history.bak$(date +\%Y_\%m_\%d)
 ```
 
 
@@ -168,6 +174,9 @@ brew install cargo-nextest
 
 # For gtk-rs
 brew install gtk4 libadwaita pkg-config
+
+# To update cargo
+rustup toolchain install stable-aarch64-apple-darwin
 ```
 
 On Ubuntu:
@@ -223,6 +232,10 @@ brew install rclone       # CLI for cloud storages access
 brew install gromgit/fuse/sshfs-mac
 brew install pgcli        # Fancy postgres client
 
+# AI
+brew install codex
+brew install repomix
+
 # Docker tools
 brew install dive        # Inspect Docker images
 brew install lazydocker  # Docker UI
@@ -236,6 +249,8 @@ brew install graphviz  # e.g. dot tool
 brew install postgres
 brew install pgvector
 # And also run "CREATE EXTENSION IF NOT EXISTS pg_vector;" for every database
+
+brew install --cask finicky
 ```
 
 On Ubuntu:
