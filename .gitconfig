@@ -1,0 +1,32 @@
+[user]
+	name = Vyacheslav Syrovatsky
+	email = vyacheslav@syrovats.ky
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF7lyJYedLfm7jpyH8W/sP5S+K+BTc/SdG77bXIdJm/6 slasyz@gmail.com
+
+[core]
+	autocrlf = input
+[alias]
+	push-all = !git remote | xargs -L1 git push
+
+[init]
+	defaultBranch = master
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[push]
+	autoSetupRemote = true
+[gpg]
+	format = ssh
+
+[url "git@git.incsecurity:"]
+	insteadOf = https://git.incsecurity/
+[url "git@gitea.incsecurity:"]
+	insteadOf = https://gitea.incsecurity/
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

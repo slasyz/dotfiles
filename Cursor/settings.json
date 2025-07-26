@@ -47,7 +47,8 @@
     "cursor.cpp.disabledLanguages": [
         "plaintext",
         "scminput",
-        "properties"
+        "properties",
+        "markdown"
     ],
     "go.toolsManagement.autoUpdate": true,
     "git.confirmSync": false,

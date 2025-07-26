@@ -789,6 +789,8 @@ The script should do this: \(ai.prompt)</string>
 			<integer>175</integer>
 			<key>Command</key>
 			<string></string>
+			<key>Composer Top Offset</key>
+			<real>0.11328125</real>
 			<key>Cursor Boost (Dark)</key>
 			<real>0.0</real>
 			<key>Cursor Boost (Light)</key>

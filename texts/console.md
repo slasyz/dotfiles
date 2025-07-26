@@ -25,6 +25,7 @@ ln -s ~/.dotfiles/.p10k.zsh ~
 ln -s ~/.dotfiles/.zshenv ~
 ln -s ~/.dotfiles/.zprofile ~
 ln -s ~/.dotfiles/ssh/config/ ~/.ssh/config
+ln -s ~/.gitconfig ~/.gitconfig
 
 ln -s ~/.dotfiles/.finicky.js ~
 ln -s ~/.dotfiles/ghostty ~/.config/ghostty
