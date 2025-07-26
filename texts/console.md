@@ -56,23 +56,7 @@ Set up backing up ZSH history in cron (https://unix.stackexchange.com/questions/
 ssh-keygen
 ssh-add --apple-use-keychain --apple-load-keychain ~/.ssh/id_ed25519
 git config --global user.signingkey "$(cat ~/.ssh/id_ed25519.pub)"
-git config --global commit.gpgsign true
-git config --global tag.gpgsign true
-
-git config --global user.name "Vyacheslav Syrovatsky"
-git config --global user.email "...@..."
-
-git config --global push.autoSetupRemote true
 ```
-
-Add this to `~/.ssh/config`:
-
-```
-Host *
-	UseKeychain yes
-	AddKeysToAgent yes
-```
-
 
 ## sshfs
 

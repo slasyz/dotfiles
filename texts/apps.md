@@ -48,6 +48,7 @@
 
 ## Reading
 
+* [**NetNewsWire**](https://netnewswire.com/) — RSS reader
 * [**PDF Viewer**](https://pdfviewer.io/) — PDF viewer
 * [**Skim**](https://skim-app.sourceforge.io/) — PDF viewer
 
@@ -69,3 +70,4 @@
 * [**Splashtop**](https://www.splashtop.com/) — remote access
 * [**Strongbox**](https://strongboxsafe.com/) — password manager
 * [**Transnomino**](https://www.transnomino.com/) — batch renamer
+* [**VoiceInk**](https://github.com/Beingpax/VoiceInk/) — dictation tool
